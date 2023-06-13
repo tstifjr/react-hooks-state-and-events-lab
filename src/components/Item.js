@@ -6,10 +6,9 @@ function Item({ name, category }) {
   const [inCart, setInCart] = useState(false);
   const placeInCart = inCart ? "in-cart" : "";
   const buttonTxt = inCart ? "Remove from Cart" : "Add to Cart"
-  
+
   function handleClick(){
     setInCart(inCart=>!inCart);
-    console.log(inCart);
   }
 
 

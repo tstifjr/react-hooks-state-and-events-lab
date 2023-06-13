@@ -8,14 +8,11 @@ function handleChange(event){
   setSelected(event.target.value);
 }
 
-// console.log(selectedCategory);
-// console.log(items[0])
 const filteredItems = items.filter(item => {
   if (selectedCategory==="All") return true;
   else return (item.category === selectedCategory);
 })
 
-// console.log (filteredItems);
   return (
     <div className="ShoppingList">
       <div className="Filter">
